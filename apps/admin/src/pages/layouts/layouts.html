@@ -1,0 +1,132 @@
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+        <button class="btn d-md-none" id="sidebarToggle">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <!-- Bread Crumb -->
+        <app-breadcrump></app-breadcrump>
+
+        <div class="ms-auto d-flex align-items-center">
+            <!-- User Dropdown -->
+            <div class="dropdown">
+                <a class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                    style="color: var(--text-color);" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="avatar">
+                        <img src="https://emuhasebe-dev.ecnorow.com/images/avatar/24.png" alt="User Avatar">
+                    </div>
+                    <div class="d-flex flex-direction-column">
+                        <span class="d-none d-md-inline small-text">Jhon Doe</span>
+                        <span class="d-none d-md-inline small-x-text">jhon@doe.com</span>
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
+                    <li>
+                        <a class="dropdown-item small-text" routerLink="/login">
+                            <span class="material-symbols-outlined me-2">logout
+                            </span>
+                            <span>Çıkış Yap</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <!-- Brand -->
+        <div class="sidebar-brand d-flex align-items-center justify-content-between">
+            <a href="#" class="logo text-decoration-none">
+                <span class="brand-text">
+                    Admin Panel
+                </span>
+            </a>
+            <button class="btn-close-sidebar d-md-none">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <!-- User Profile -->
+        <div class="user-profile">
+            <div class="avatar">
+                <img src="https://emuhasebe-dev.ecnorow.com/images/avatar/24.png" alt="User Avatar">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Jhon Doe</span>
+            </div>
+        </div>
+
+        <!-- Sidebar Search -->
+        <div class="sidebar-search">
+            <div class="position-relative">
+                <input type="text" [(ngModel)]="search" (ngModelChange)="search.set($event)"
+                    class="form-control sidebar-search-input" placeholder="Aranacak Değer...">
+                <span class="material-symbols-outlined sidebar-search-icon">search</span>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+            @for (nav of navigations() | nav: search(); track nav.url) {
+            <li class="nav-item">
+                <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    class="nav-link">
+                    <div class="nav-icon-text">
+                        <span class="nav-icon material-symbols-outlined">{{ nav.icon }}</span>
+                        <span>{{ nav.title }}</span>
+                    </div>
+                </a>
+            </li>
+            }
+        </ul>
+
+        <!-- Sticky Footer Menu for Important Items (HTML) -->
+        <div class="sidebar-sticky-menu">
+            <!-- Örneğin önemli ve sık kullanılan menüler -->
+            <a href="#" class="sticky-menu-item" title="Ayarlar">
+                <span class="material-symbols-outlined">settings</span>
+            </a>
+            <a href="#" class="sticky-menu-item" title="Yardım">
+                <span class="material-symbols-outlined">help</span>
+            </a>
+            <a routerLink="/" class="sticky-menu-item" title="Çıkış Yap">
+                <span class="material-symbols-outlined">logout</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <!-- Main Content Area -->
+    <div id="page-content-wrapper">
+        <!-- Main Content Container -->
+        <div class="content-container">
+            <router-outlet></router-outlet>
+        </div>
+
+        <div class="content-scroll-top" id="contentScrollTop">
+            <button class="btn-content-scroll-top">
+                <span class="material-symbols-outlined">arrow_upward</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="fixed-footer">
+    <div class="footer-left">
+        <span class="material-symbols-outlined">schedule</span>
+        <span class="time-display">{{ time() | date:'dd MMM yyyy HH:mm:ss' }}</span>
+    </div>
+    <div class="footer-center">
+        <span>&copy; 2025 StellarAdmin - Version 1.0.2</span>
+    </div>
+    <div class="footer-right">
+        <a href="#" class="footer-link">Support</a>
+        <a href="#" class="footer-link">Documentation</a>
+        <a href="#" class="footer-link d-none d-md-inline-block">License</a>
+    </div>
+</footer>

@@ -19,7 +19,9 @@
             "input": "apps/admin/public"
           }
         ],
-        "styles": ["apps/admin/src/styles.css"]
+        "styles": [
+          "apps/admin/src/styles.css"
+        ]
       },
       "configurations": {
         "production": {

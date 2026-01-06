@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Kablosuz Oyuncu Mouse",
+      "price": 1250,
+      "description": "Yüksek hassasiyetli, RGB aydınlatmalı oyuncu mouse.",
+      "categoryId": "1",
+      "categoryName": "Elektronik",
+      "imageUrl": "https://picsum.photos/200/300?random=1",
+      "stock": 45,
+      "rating": 4.8
+    },
+    {
+      "id": "2",
+      "name": "Mekanik Klavye (Blue Switch)",
+      "price": 2100.5,
+      "description": "Blue switch, TVK düzeni mekanik klavye.",
+      "categoryId": "1",
+      "categoryName": "Elektronik",
+      "imageUrl": "https://picsum.photos/200/300?random=2",
+      "stock": 12,
+      "rating": 4.5
+    },
+    {
+      "id": "3",
+      "name": "Pamuklu Slim Fit Gömlek",
+      "price": 450,
+      "description": "%100 pamuk, slim fit gömlek.",
+      "categoryId": "2",
+      "categoryName": "Giyim",
+      "imageUrl": "https://picsum.photos/200/300?random=3",
+      "stock": 100,
+      "rating": 4.2
+    },
+    {
+      "id": "4",
+      "name": "Akıllı Saat v2 Pro",
+      "price": 3800,
+      "description": "Nabız ölçer, GPS ve suya dayanıklı akıllı saat.",
+      "categoryId": "1",
+      "categoryName": "Elektronik",
+      "imageUrl": "https://picsum.photos/200/300?random=4",
+      "stock": 5,
+      "rating": 4.9
+    },
+    {
+      "id": "5",
+      "name": "Su Geçirmez Sırt Çantası",
+      "price": 750,
+      "description": "15.6 inç laptop uyumlu su geçirmez çanta.",
+      "categoryId": "3",
+      "categoryName": "Aksesuar",
+      "imageUrl": "https://picsum.photos/200/300?random=5",
+      "stock": 0,
+      "rating": 3.8
+    },
+    {
+      "id": "8c3e",
+      "productName": "Telefon",
+      "imageUrl": "",
+      "unit": "100",
+      "stock": ""
+    },
+    {
+      "id": "22f0",
+      "productName": "",
+      "imageUrl": "",
+      "unit": "2222222222222",
+      "stock": ""
+    }
+  ]
+}
