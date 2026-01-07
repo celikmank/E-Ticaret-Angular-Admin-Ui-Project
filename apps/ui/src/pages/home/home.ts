@@ -82,10 +82,14 @@ export default class Home {
       return;
     }
 
+    if (!data.id) {
+      this.#toast.showToast("Hata", "Ürün bilgisi eksik", "error");
+      return;
+    }
+
     const cart: cartModel = {
-      id: Math.random().toString(36).substring(2, 6),
       userId: currentUser.id,
-      productId: data.id || '',
+      productId: data.id,
       productName: data.name,
       price: data.price,
       quantity: 1

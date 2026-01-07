@@ -22,9 +22,11 @@ export class Common {
     }
 
     getCartCount() {
-        // <any[]> veya <cartModel[]> ekleyerek dönen verinin dizi olduğunu belirtiyoruz
-        this.#http.get<cartModel[]>(`api/carts`).subscribe((res) => {
-            this.cartCount.set(res.length);
-        });
+        if (this.user()) {
+            const endpoint = `api/carts?userId=${this.user()!.id}`;
+            this.#http.get<cartModel[]>(endpoint).subscribe((res) => {
+                this.cartCount.set(res.length);
+            });
+        }
     }
 }

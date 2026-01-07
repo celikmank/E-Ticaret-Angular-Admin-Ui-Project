@@ -428,123 +428,19 @@
   ],
   "carts": [
     {
-      "id": "e021",
+      "id": "a1a8",
       "userId": "2",
-      "productId": "3",
-      "productName": "MacBook Pro 14 M3 Pro",
-      "price": 79999,
+      "productId": "8",
+      "productName": "Zara Oversize Bomber Ceket",
+      "price": 1299,
       "quantity": 1
     },
     {
-      "id": "6e13",
+      "id": "1b08",
       "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "e4f2",
-      "userId": "2",
-      "productId": "1",
-      "productName": "iPhone 15 Pro Max 256GB",
-      "price": 54999,
-      "quantity": 1
-    },
-    {
-      "id": "1353",
-      "userId": "2",
-      "productId": "5",
-      "productName": "iPad Air 11 M2",
-      "price": 24999,
-      "quantity": 1
-    },
-    {
-      "id": "b3ee",
-      "userId": "2",
-      "productId": "4",
-      "productName": "Sony WH-1000XM5 Kulaklık",
-      "price": 8999,
-      "quantity": 1
-    },
-    {
-      "id": "z93j",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "5kws",
-      "userId": "2",
-      "productId": "3",
-      "productName": "MacBook Pro 14 M3 Pro",
-      "price": 79999,
-      "quantity": 1
-    },
-    {
-      "id": "0h79",
-      "userId": "2",
-      "productId": "1",
-      "productName": "iPhone 15 Pro Max 256GB",
-      "price": 54999,
-      "quantity": 1
-    },
-    {
-      "id": "rshu",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "mvw2",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "hwmn",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "y4q6",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "lpes",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "kwvn",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
-      "quantity": 1
-    },
-    {
-      "id": "z051",
-      "userId": "2",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "price": 49999,
+      "productId": "7",
+      "productName": "Levi's 501 Original Kot Pantolon",
+      "price": 1899,
       "quantity": 1
     }
   ]
