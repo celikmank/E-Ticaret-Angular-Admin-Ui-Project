@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, inject, ViewEncapsulation } from '@
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { UserModel } from '@e-ticaret/shared/models/User-model';
+import { Common } from 'apps/ui/src/services/common';
 import { FlexiToastService } from 'flexi-toast';
 
 @Component({
@@ -19,6 +20,8 @@ export default class Login {
   readonly #toast = inject(FlexiToastService);
   readonly #router = inject(Router);
 
+  readonly #common = inject(Common);
+
   signIn(form: NgForm){
     if(!form.valid) return;
 
@@ -30,6 +33,7 @@ export default class Login {
 
       const user = res[0];
       localStorage.setItem("response", JSON.stringify(user));
+      this.#common.user.set(user);
       this.#router.navigateByUrl("/");
     })
   }
