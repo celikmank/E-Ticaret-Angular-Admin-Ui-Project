@@ -4,9 +4,9 @@ import Blank from '../../components/blank';
 import { FlexiGridModule } from 'flexi-grid';
 import { RouterLink } from '@angular/router';
 import { FlexiToastService } from 'flexi-toast';
-import { CategoryModel } from '../../models/Category.model';
-import { BreadcrumbModel } from '../../models/Breadcrumb.model';
 import { ErrorService } from '../../services/error.service';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
+import { CategoryModel } from '@e-ticaret/shared/models/Category.model';
 
 
 @Component({

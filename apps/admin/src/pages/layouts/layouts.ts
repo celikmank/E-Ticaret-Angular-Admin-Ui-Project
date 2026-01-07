@@ -1,7 +1,7 @@
 import { Component, computed, signal, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Breadcrump } from './breadcrumb/breadcrump';
-import { navigations } from '../../models/Navigation.model';
+import { navigations } from '@e-ticaret/shared/models/Navigation.model';
 import { NavPipe } from '../../pipes/nav-pipe';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';

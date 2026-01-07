@@ -4,8 +4,8 @@ import Blank from '../../components/blank';
 import { FlexiGridModule } from 'flexi-grid';
 import { RouterLink } from '@angular/router';
 import { FlexiToastService } from 'flexi-toast';
-import { UserModel } from '../../models/User-model';
-import { BreadcrumbModel } from '../../models/Breadcrumb.model';
+import { UserModel } from '@e-ticaret/shared/models/User-model';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
 import { FormsModule } from "@angular/forms";
 import { ErrorService } from '../../services/error.service';
 

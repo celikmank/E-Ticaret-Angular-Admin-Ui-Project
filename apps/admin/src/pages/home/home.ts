@@ -1,6 +1,6 @@
 import { Component, computed } from '@angular/core';
 import Blank from '../../components/blank';
-import { BreadcrumbModel } from '../../models/Breadcrumb.model';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
 
 @Component({
   selector: 'app-home',

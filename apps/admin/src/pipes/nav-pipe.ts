@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { NavigationModel } from '../models/Navigation.model';
+import { NavigationModel } from '@e-ticaret/shared/models/Navigation.model';
 
 @Pipe({
     name: 'nav',

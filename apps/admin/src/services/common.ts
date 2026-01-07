@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { BreadcrumbModel } from '../models/Breadcrumb.model';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
 
 @Injectable({
   providedIn: 'root',

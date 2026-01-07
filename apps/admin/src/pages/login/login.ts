@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { ErrorService } from '../../services/error.service';
 import { AuthService } from '../../services/auth.service';
-import { UserModel } from '../../models/User-model';
+import { UserModel } from '@e-ticaret/shared/models/User-model';
 
 @Component({
   selector: 'app-login',

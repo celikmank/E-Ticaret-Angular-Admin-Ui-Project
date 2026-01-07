@@ -1,6 +1,6 @@
 import { Injectable, signal, computed, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserModel } from '../models/User-model';
+import { UserModel } from '@e-ticaret/shared/models/User-model';
 
 @Injectable({
   providedIn: 'root'

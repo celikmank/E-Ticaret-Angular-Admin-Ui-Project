@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, resource, signal, ViewEncapsulation } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import Blank from '../../../components/blank';
-import { CategoryModel, initialCategory } from '../../../models/Category.model';
+import { CategoryModel, initialCategory } from '@e-ticaret/shared/models/Category.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';

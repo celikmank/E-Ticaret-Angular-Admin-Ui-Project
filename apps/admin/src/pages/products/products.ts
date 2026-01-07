@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, inject,ViewEncapsulation } from "@angular/core";
 import Blank from "../../components/blank";
 import { FlexiGridFilterDataModel, FlexiGridModule } from "flexi-grid";
-import { ProductModel } from "../../models/Product.model";
+import { ProductModel } from "@e-ticaret/shared/models/Product.model";
 import { HttpClient, httpResource } from "@angular/common/http";
 import { RouterLink } from "@angular/router";
 import { FlexiToastService } from "flexi-toast";
-import { CategoryModel } from "../../models/Category.model";
-import { BreadcrumbModel } from "../../models/Breadcrumb.model";
+import { CategoryModel } from "@e-ticaret/shared/models/Category.model";
+import { BreadcrumbModel } from "@e-ticaret/shared/models/Breadcrumb.model";
 import { ErrorService } from "../../services/error.service";
 
 

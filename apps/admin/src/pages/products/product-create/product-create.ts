@@ -15,10 +15,10 @@ import { HttpClient, httpResource } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgxMaskDirective } from 'ngx-mask';
 import { lastValueFrom } from 'rxjs';
-import { initialProduct, ProductModel } from '../../../models/Product.model';
-import { CategoryModel } from '../../../models/Category.model';
 import { FlexiSelectModule } from "flexi-select";
-import { BreadcrumbModel } from '../../../models/Breadcrumb.model';
+import { initialProduct, ProductModel } from '@e-ticaret/shared/models/Product.model';
+import { CategoryModel } from '@e-ticaret/shared/models/Category.model';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
 import { ErrorService } from '../../../services/error.service';
 
 

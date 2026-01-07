@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, effect, inject, input, ViewEncapsulation } from "@angular/core";
-import { BreadcrumbModel } from "../models/Breadcrumb.model";
+import { BreadcrumbModel } from "@e-ticaret/shared/models/Breadcrumb.model";
 import { Common } from "../services/common";
 
 @Component({

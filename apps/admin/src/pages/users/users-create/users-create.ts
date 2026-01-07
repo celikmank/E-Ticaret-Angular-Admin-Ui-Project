@@ -7,8 +7,8 @@ import { map } from 'rxjs/operators';
 import { FlexiToastService } from 'flexi-toast';
 import { FormsModule, NgForm } from '@angular/forms';
 import Blank from '../../../components/blank';
-import { initialUser, UserModel } from '../../../models/User-model';
-import { BreadcrumbModel } from '../../../models/Breadcrumb.model';
+import { initialUser, UserModel } from '@e-ticaret/shared/models/User-model';
+import { BreadcrumbModel } from '@e-ticaret/shared/models/Breadcrumb.model';
 import { ErrorService } from '../../../services/error.service';
 
 
