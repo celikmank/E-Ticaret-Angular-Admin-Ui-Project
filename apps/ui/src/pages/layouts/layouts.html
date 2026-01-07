@@ -13,7 +13,14 @@
         </ul>
         <div class="nav-icons">
             <i class="fas fa-search"></i>
-            <i class="fas fa-shopping-cart"></i>
+            <div style="position: relative;">
+                <i class="fas fa-shopping-cart"></i>
+                @if (cartCount()>0) {
+  <div class="cart-count">{{cartCount()}}</div>
+                }
+              
+            </div>
+            
             @if (user()) {
             <i routerLink="/auth/login" class="fas fa-user" title="Giriş Yap"></i>
             }@else {

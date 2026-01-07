@@ -34,7 +34,7 @@
       "categoryUrl": "elektronik",
       "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=500&fit=crop",
       "stock": 8,
-      "rating": 5.0
+      "rating": 5
     },
     {
       "id": "4",
@@ -286,7 +286,7 @@
       "categoryUrl": "oyun-hobi",
       "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=500&fit=crop",
       "stock": 8,
-      "rating": 5.0
+      "rating": 5
     },
     {
       "id": "25",
@@ -395,8 +395,8 @@
       "lastName": "Demir",
       "fullName": "Elif Demir",
       "username": "elif.demir",
-        "email": "elif.demir@example.com",
-        "password": "admin123",
+      "email": "elif.demir@example.com",
+      "password": "admin123",
       "isAdmin": true,
       "createdAt": "2024-06-12T08:15:00Z",
       "avatarUrl": "https://i.pravatar.cc/150?img=2"
@@ -407,8 +407,8 @@
       "lastName": "Arslan",
       "fullName": "Ayşe Arslan",
       "username": "ayse.arslan",
-        "email": "ayse.arslan@example.com",
-        "password": "ayse123",
+      "email": "ayse.arslan@example.com",
+      "password": "ayse123",
       "isAdmin": false,
       "createdAt": "2023-11-01T09:00:00Z",
       "avatarUrl": "https://i.pravatar.cc/150?img=4"
@@ -419,11 +419,133 @@
       "lastName": "Öztürk",
       "fullName": "Can Öztürk",
       "username": "can.ozturk",
-        "email": "can.ozturk@example.com",
-        "password": "can123",
+      "email": "can.ozturk@example.com",
+      "password": "can123",
       "isAdmin": false,
       "createdAt": "2024-01-18T12:05:00Z",
       "avatarUrl": "https://i.pravatar.cc/150?img=5"
+    }
+  ],
+  "carts": [
+    {
+      "id": "e021",
+      "userId": "2",
+      "productId": "3",
+      "productName": "MacBook Pro 14 M3 Pro",
+      "price": 79999,
+      "quantity": 1
+    },
+    {
+      "id": "6e13",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "e4f2",
+      "userId": "2",
+      "productId": "1",
+      "productName": "iPhone 15 Pro Max 256GB",
+      "price": 54999,
+      "quantity": 1
+    },
+    {
+      "id": "1353",
+      "userId": "2",
+      "productId": "5",
+      "productName": "iPad Air 11 M2",
+      "price": 24999,
+      "quantity": 1
+    },
+    {
+      "id": "b3ee",
+      "userId": "2",
+      "productId": "4",
+      "productName": "Sony WH-1000XM5 Kulaklık",
+      "price": 8999,
+      "quantity": 1
+    },
+    {
+      "id": "z93j",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "5kws",
+      "userId": "2",
+      "productId": "3",
+      "productName": "MacBook Pro 14 M3 Pro",
+      "price": 79999,
+      "quantity": 1
+    },
+    {
+      "id": "0h79",
+      "userId": "2",
+      "productId": "1",
+      "productName": "iPhone 15 Pro Max 256GB",
+      "price": 54999,
+      "quantity": 1
+    },
+    {
+      "id": "rshu",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "mvw2",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "hwmn",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "y4q6",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "lpes",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "kwvn",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
+    },
+    {
+      "id": "z051",
+      "userId": "2",
+      "productId": "2",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "price": 49999,
+      "quantity": 1
     }
   ]
 }

@@ -85,6 +85,22 @@ body {
     transform: scale(1.1);
 }
 
+/* Basket count (badge) */
+.cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0.15rem 0.45rem;
+    font-size: 0.75rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -3101,5 +3117,5 @@ hr {
         opacity: 0.2;
     }
 }
-    
+
 }
