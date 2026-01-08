@@ -14,7 +14,7 @@
         <div class="nav-icons">
             @if(user()){
                 <i routerLink="/orders" class="fas fa-truck-ramp-box cursor"></i>
-                <div routerLink="/baskets" class="cursor" style="position: relative;">
+                <div routerLink="/carts" class="cursor" style="position: relative;">
                     <i class="fas fa-shopping-cart"></i>
                     @if(cartCount() > 0){
                         <div class="basket-count">{{cartCount()}}</div>

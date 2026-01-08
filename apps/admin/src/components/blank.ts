@@ -16,7 +16,7 @@ export default class Blank {
 
   constructor() {
     effect(() => {
-      this.#common.set(this.breadcrumbs());
+      this.#common.setBreadcrumb(this.breadcrumbs());
     });
   }
 }
