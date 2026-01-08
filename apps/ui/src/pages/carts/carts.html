@@ -26,9 +26,9 @@
                                 </div>
                             </div>
                             <div class="quantity-controls">
-                                <button class="qty-btn minus">-</button>
+                                <button class="qty-btn minus" (click)="decrement(val)">-</button>
                                 <span class="quantity">{{val.quantity}}</span>
-                                <button class="qty-btn plus">+</button>
+                                <button class="qty-btn plus" (click)="increment(val)">+</button>
                             </div>
                             <div class="item-price">
                                 <span class="price">{{(val.productPrice * (val.quantity ?? 1)) | trCurrency:'₺':false}}</span>
@@ -83,7 +83,6 @@
                             <div class="payment-icons">
                                 <i class="fab fa-cc-visa"></i>
                                 <i class="fab fa-cc-mastercard"></i>
-                                <i class="fab fa-cc-amex"></i>
                                 <i class="fas fa-credit-card"></i>
                             </div>
                         </div>

@@ -444,60 +444,6 @@
       "quantity": 1
     },
     {
-      "id": "6eb8",
-      "userId": "4",
-      "productId": "2",
-      "productName": "Samsung Galaxy S24 Ultra",
-      "productPrice": 49999,
-      "productImageUrl": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
-      "id": "ce05",
-      "userId": "4",
-      "productId": "3",
-      "productName": "MacBook Pro 14 M3 Pro",
-      "productPrice": 79999,
-      "productImageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
-      "id": "77ce",
-      "userId": "4",
-      "productId": "22",
-      "productName": "Xbox Series X",
-      "productPrice": 18999,
-      "productImageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
-      "id": "404d",
-      "userId": "4",
-      "productId": "22",
-      "productName": "Xbox Series X",
-      "productPrice": 18999,
-      "productImageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
-      "id": "944a",
-      "userId": "4",
-      "productId": "22",
-      "productName": "Xbox Series X",
-      "productPrice": 18999,
-      "productImageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
-      "id": "a7e7",
-      "userId": "4",
-      "productId": "22",
-      "productName": "Xbox Series X",
-      "productPrice": 18999,
-      "productImageUrl": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=500&fit=crop",
-      "quantity": 1
-    },
-    {
       "id": "e738",
       "userId": "4",
       "productId": "23",
