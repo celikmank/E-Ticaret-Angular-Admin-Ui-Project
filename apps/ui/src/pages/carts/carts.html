@@ -17,7 +17,7 @@
                 <div class="cart-items">
                     @for(val of data(); track val.id){
                         <div class="cart-item">
-                            <img [src]="val.productImageUrl" [alt]="val.productName">
+                            <img [src]="val.productImageUrl || 'https://via.placeholder.com/120'" [alt]="val.productName">
                             <div class="item-details">
                                 <h3>{{val.productName}}</h3>
                                 <div class="item-actions">
@@ -31,7 +31,7 @@
                                 <button class="qty-btn plus">+</button>
                             </div>
                             <div class="item-price">
-                                <span class="price">{{val.productPrice | trCurrency:'₺':false}}</span>
+                                <span class="price">{{(val.productPrice * (val.quantity ?? 1)) | trCurrency:'₺':false}}</span>
                             </div>
                         </div>
                     }
@@ -44,24 +44,28 @@
     
                         <div class="summary-row">
                             <span>Ara Toplam:</span>
-                            <span id="subtotal">91.996 ₺</span>
+                            <span id="subtotal">{{subtotal() | trCurrency:'₺':false}}</span>
                         </div>
     
                         <div class="summary-row">
                             <span>Kargo:</span>
-                            <span class="free">Ücretsiz</span>
+                            @if(shippingCost() === 0) {
+                                <span class="free">Ücretsiz</span>
+                            } @else {
+                                <span>{{shippingCost() | trCurrency:'₺':false}}</span>
+                            }
                         </div>
     
                         <div class="summary-row">
-                            <span>KDV (18%):</span>
-                            <span id="tax">16.559 ₺</span>
+                            <span>KDV ({{taxRate()}}%):</span>
+                            <span id="tax">{{taxAmount() | trCurrency:'₺':false}}</span>
                         </div>
     
                         <hr>
     
                         <div class="summary-row total">
                             <span>Toplam:</span>
-                            <span id="total">108.555 ₺</span>
+                            <span id="total">{{totalWithTax() | trCurrency:'₺':false}}</span>
                         </div>
     
                         <div class="promo-code">
