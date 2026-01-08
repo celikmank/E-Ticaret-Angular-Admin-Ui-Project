@@ -1,5 +1,5 @@
 import { httpResource } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, computed, inject, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, computed, inject, ViewEncapsulation } from '@angular/core';
 import { Router, RouterOutlet, RouterLink } from '@angular/router';
 import { CategoryModel } from '@e-ticaret/shared/models/Category.model';
 import { Common } from '../../services/common';
@@ -13,7 +13,12 @@ import { Common } from '../../services/common';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export default class Layouts {
+export default class Layouts implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    this.#common.getCartCount();
+  }
+  
   readonly result = httpResource<CategoryModel[]>(() => "api/categories");
   readonly data = computed(() => this.result.value() ?? []);
   readonly user = computed(() => this.#common.user());
