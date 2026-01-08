@@ -13,10 +13,11 @@
         </ul>
         <div class="nav-icons">
             @if(user()){
-                <div routerLink="/carts" style="position: relative;">
+                <i routerLink="/orders" class="fas fa-truck-ramp-box cursor"></i>
+                <div routerLink="/baskets" class="cursor" style="position: relative;">
                     <i class="fas fa-shopping-cart"></i>
                     @if(cartCount() > 0){
-                        <div class="cart-count">{{cartCount()}}</div>
+                        <div class="basket-count">{{cartCount()}}</div>
                     }
                 </div>
                 <i class="fas fa-power-off" (click)="logout()" title="Çıkış Yap"></i>
