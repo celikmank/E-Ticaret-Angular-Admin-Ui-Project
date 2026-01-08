@@ -6,27 +6,23 @@
         </div>
         <ul class="nav-menu">
             @for(val of data(); track val.id){
-            <li>
-                <a [routerLink]="['/','products',val.url]" class="nav-link">{{val.name}}</a>
-            </li>
+                <li>
+                    <a [routerLink]="['/','products',val.url]" class="nav-link">{{val.name}}</a>
+                </li>
             }
         </ul>
         <div class="nav-icons">
-            <i class="fas fa-search"></i>
-            <div style="position: relative;">
-                <i class="fas fa-shopping-cart"></i>
-                @if (cartCount()>0) {
-  <div class="cart-count">{{cartCount()}}</div>
-                }
-              
-            </div>
-            
-            @if (!user()) {
-            <i routerLink="/auth/login" class="fas fa-user" title="Giriş Yap"></i>
+            @if(user()){
+                <div routerLink="/carts" style="position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    @if(cartCount() > 0){
+                        <div class="cart-count">{{cartCount()}}</div>
+                    }
+                </div>
+                <i class="fas fa-power-off" (click)="logout()" title="Çıkış Yap"></i>
             }@else {
-            <i class="fas fa-power-off" (click)="logout()" title="Çıkış Yap"></i>
+                <i class="fas fa-user" routerLink="/auth/login" title="Giriş Yap"></i>
             }
-
         </div>
     </div>
 </nav>

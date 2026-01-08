@@ -3,14 +3,16 @@ export interface cartModel {
     userId: string;
     productId: string;
     productName: string;
-    price: number;
+    productPrice: number;
     quantity: number;
+    productImageUrl: string;
 }
 
 export const initialCart: cartModel = {
     userId: '',
     productId: '',
     productName: '',
-    price: 0,
+    productPrice: 0,
     quantity: 1,
+    productImageUrl: '',
 };
