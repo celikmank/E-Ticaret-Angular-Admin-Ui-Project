@@ -1,4 +1,5 @@
-import { HttpClient, httpResource } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { httpResource } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, computed, inject, signal, Signal, ViewEncapsulation } from '@angular/core';
 import { Common } from '../../services/common';
 import { cartModel } from '@e-ticaret/shared/models/cart.model';
